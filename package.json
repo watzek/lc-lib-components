@@ -1,0 +1,36 @@
+{
+  "name": "lc-lib-components",
+  "version": "0.2.0",
+  "description": "lewis & clark college library web components",
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/lc-lib-components.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "scripts": {
+    "build": "stencil build --prerender",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "serve": "stencil-dev-server",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@stencil/core": "0.2.3",
+    "moment": "^2.20.1",
+    "query-string": "^5.1.0"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "latest",
+    "@stencil/utils": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watzek/lc-lib-components.git"
+  },
+  "author": "@thatbudakguy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watzek/lc-lib-components/issues"
+  },
+  "homepage": "https://github.com/watzek/lc-lib-components"
+}

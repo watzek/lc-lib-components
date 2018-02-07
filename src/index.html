@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>l&c library web components</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+
+  <script src="/build/lc-lib-components.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+  <library-header>
+    <a slot="library-brand" href="http://library.lclark.edu/">Aubrey R. Watzek Library</a>
+    <a slot="institution-brand" href="https://lclark.edu">Lewis & Clark College</a>
+    <library-info calendar-id="clso9fgnj2mb545c58077m45io" api-key="AIzaSyC-lc3pIx6J0eidPFbEfRD1sOCgPDHoFps" hours-link="/hours-calendar" />
+    <library-search cx-token="003799459321519432666:as16wvfy7zi" placeholder="L&C Site Search" search-link="/site-search" />
+  </library-header>
+
+  <style>
+    body {
+      margin: 1rem;
+      font-family: sans-serif;
+    }
+  </style>
+</body>
+</html>
