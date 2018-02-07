@@ -4,36 +4,31 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
-import '@stencil/router';
 
 import {
-  MatchResults,
-} from '@stencil/router';
-
-import {
-  AppHome as AppHome
-} from './components/app-home/app-home';
+  LibraryHeader as LibraryHeader
+} from './components/library-header/library-header';
 
 declare global {
-  interface HTMLAppHomeElement extends AppHome, HTMLElement {
+  interface HTMLLibraryHeaderElement extends LibraryHeader, HTMLElement {
   }
-  var HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
+  var HTMLLibraryHeaderElement: {
+    prototype: HTMLLibraryHeaderElement;
+    new (): HTMLLibraryHeaderElement;
   };
   interface HTMLElementTagNameMap {
-    "app-home": HTMLAppHomeElement;
+    "library-header": HTMLLibraryHeaderElement;
   }
   interface ElementTagNameMap {
-    "app-home": HTMLAppHomeElement;
+    "library-header": HTMLLibraryHeaderElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "app-home": JSXElements.AppHomeAttributes;
+      "library-header": JSXElements.LibraryHeaderAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppHomeAttributes extends HTMLAttributes {
+    export interface LibraryHeaderAttributes extends HTMLAttributes {
       
     }
   }
@@ -41,62 +36,66 @@ declare global {
 
 
 import {
-  AppProfile as AppProfile
-} from './components/app-profile/app-profile';
+  LibraryInfo as LibraryInfo
+} from './components/library-info/library-info';
 
 declare global {
-  interface HTMLAppProfileElement extends AppProfile, HTMLElement {
+  interface HTMLLibraryInfoElement extends LibraryInfo, HTMLElement {
   }
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
+  var HTMLLibraryInfoElement: {
+    prototype: HTMLLibraryInfoElement;
+    new (): HTMLLibraryInfoElement;
   };
   interface HTMLElementTagNameMap {
-    "app-profile": HTMLAppProfileElement;
+    "library-info": HTMLLibraryInfoElement;
   }
   interface ElementTagNameMap {
-    "app-profile": HTMLAppProfileElement;
+    "library-info": HTMLLibraryInfoElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "app-profile": JSXElements.AppProfileAttributes;
+      "library-info": JSXElements.LibraryInfoAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppProfileAttributes extends HTMLAttributes {
-      
-        match?: MatchResults
+    export interface LibraryInfoAttributes extends HTMLAttributes {
+      apiKey?: string;
+      calendarId?: string;
+      hoursLink?: string;
     }
   }
 }
 
 
 import {
-  MyApp as MyApp
-} from './components/my-app/my-app';
+  LibraryInfo as LibrarySearch
+} from './components/library-search/library-search';
 
 declare global {
-  interface HTMLMyAppElement extends MyApp, HTMLElement {
+  interface HTMLLibrarySearchElement extends LibrarySearch, HTMLElement {
   }
-  var HTMLMyAppElement: {
-    prototype: HTMLMyAppElement;
-    new (): HTMLMyAppElement;
+  var HTMLLibrarySearchElement: {
+    prototype: HTMLLibrarySearchElement;
+    new (): HTMLLibrarySearchElement;
   };
   interface HTMLElementTagNameMap {
-    "my-app": HTMLMyAppElement;
+    "library-search": HTMLLibrarySearchElement;
   }
   interface ElementTagNameMap {
-    "my-app": HTMLMyAppElement;
+    "library-search": HTMLLibrarySearchElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "my-app": JSXElements.MyAppAttributes;
+      "library-search": JSXElements.LibrarySearchAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyAppAttributes extends HTMLAttributes {
-      
+    export interface LibrarySearchAttributes extends HTMLAttributes {
+      cxToken?: string;
+      placeholder?: string;
+      searchLink?: string;
     }
   }
 }
 
+declare global { namespace JSX { interface StencilJSX {} } }

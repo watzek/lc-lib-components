@@ -1,10 +1,8 @@
 exports.config = {
+  namespace: 'lc-lib-components',
+  generateDistribution: true,
   bundles: [
-    { components: ['my-app', 'app-home'] },
-    { components: ['app-profile'] }
-  ],
-  collections: [
-    { name: '@stencil/router' }
+    { components: ['library-header', 'library-info', 'library-search'] },
   ]
 };
 
