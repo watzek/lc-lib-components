@@ -5,23 +5,36 @@
   <title>l&c library web components</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
-  <script src="/build/lc-lib-components.js"></script>
+  <!-- use older bootstrap & jquery to match springshare -->
+  <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- load our fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Karla|Open+Sans|Sorts+Mill+Goudy" rel="stylesheet">
+  <!-- load our components -->
+  <script src="/build/lc-lib-components.js"></script>
 </head>
 <body>
 
-  <library-header>
+  <library-header
+    background-image="https://s3.amazonaws.com/libapps/customers/3066/images/header.png"
+    calendar-id="clso9fgnj2mb545c58077m45io"
+    api-key="AIzaSyC-lc3pIx6J0eidPFbEfRD1sOCgPDHoFps"
+    hours-link="/hours-calendar"
+    cx-token="003799459321519432666:as16wvfy7zi"
+    placeholder="L&C Site Search"
+    search-link="/site-search">
     <a slot="library-brand" href="http://library.lclark.edu/">Aubrey R. Watzek Library</a>
     <a slot="institution-brand" href="https://lclark.edu">Lewis & Clark College</a>
-    <library-info calendar-id="clso9fgnj2mb545c58077m45io" api-key="AIzaSyC-lc3pIx6J0eidPFbEfRD1sOCgPDHoFps" hours-link="/hours-calendar" />
-    <library-search cx-token="003799459321519432666:as16wvfy7zi" placeholder="L&C Site Search" search-link="/site-search" />
   </library-header>
 
   <style>
     body {
-      margin: 1rem;
-      font-family: sans-serif;
+      padding: 0;
+      margin: 0;
     }
   </style>
+
 </body>
 </html>

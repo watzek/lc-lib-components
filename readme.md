@@ -34,7 +34,9 @@ $ yarn dev # or npm run dev
 ```
 all of the content in `www` is auto-generated to run the dev server. **don't make changes to this folder** - they will be overwritten.
 
-you can edit component files located in `src` to change the components. to play with different arrangements and test out the components, you can edit `src/index.html`.
+you can edit component files located in `src` to change the components and the changes will appear automatically.
+
+to play with different arrangements and test out the components, you can edit `src/index.html`. the dev server often won't pick up changes to `src/index.html`, so you'll need to restart it when you edit that file.
 
 ## Deployment
 to build a production bundle of the components:

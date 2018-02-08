@@ -29,7 +29,13 @@ declare global {
   }
   namespace JSXElements {
     export interface LibraryHeaderAttributes extends HTMLAttributes {
-      
+      apiKey?: string;
+      backgroundImage?: string;
+      calendarId?: string;
+      cxToken?: string;
+      hoursLink?: string;
+      placeholder?: string;
+      searchLink?: string;
     }
   }
 }
@@ -62,6 +68,36 @@ declare global {
       apiKey?: string;
       calendarId?: string;
       hoursLink?: string;
+    }
+  }
+}
+
+
+import {
+  LibraryNavbar as LibraryNavbar
+} from './components/library-navbar/library-navbar';
+
+declare global {
+  interface HTMLLibraryNavbarElement extends LibraryNavbar, HTMLElement {
+  }
+  var HTMLLibraryNavbarElement: {
+    prototype: HTMLLibraryNavbarElement;
+    new (): HTMLLibraryNavbarElement;
+  };
+  interface HTMLElementTagNameMap {
+    "library-navbar": HTMLLibraryNavbarElement;
+  }
+  interface ElementTagNameMap {
+    "library-navbar": HTMLLibraryNavbarElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "library-navbar": JSXElements.LibraryNavbarAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface LibraryNavbarAttributes extends HTMLAttributes {
+      
     }
   }
 }

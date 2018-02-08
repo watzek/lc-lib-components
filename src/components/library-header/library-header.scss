@@ -1,0 +1,44 @@
+library-header {
+  .library-header {
+    font-size: 1.5rem;
+    color: white;
+    border-bottom: .25rem solid #e66b3f;
+
+    a {
+      color: white;
+    }
+  }
+
+  .header-brand {
+    margin: 2rem auto 1rem;
+    padding: 0 1rem;
+  }
+
+  .institution-brand a,
+  .library-brand a {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Sorts Mill Goudy", serif;
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  .library-brand a {
+    font-size: 4rem;
+  }
+
+  .institution-brand a {
+    font-size: 2.5rem;
+  }
+
+  .library-info {
+    margin-top: 1.5rem;
+
+    a {
+      float: right;
+      font-family: "Karla", sans-serif;
+      text-decoration: none;
+      font-size: 1.7rem;
+    }
+  }
+}

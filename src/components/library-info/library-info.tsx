@@ -3,10 +3,7 @@ import queryString from 'query-string'
 import moment from 'moment'
 
 @Component({
-  tag: 'library-info',
-  host: {
-    slot: 'library-info'
-  }
+  tag: 'library-info'
 })
 export class LibraryInfo {
   @Prop() apiKey: string
@@ -32,10 +29,11 @@ export class LibraryInfo {
 
   render() {
     return (
-      <div class="library-info">
+      <div class="library-info col-xs-12">
         <a href={ this.hoursLink }>
           <span class="glyphicon glyphicon-calendar"></span>
-          <span class="hours-date">{ moment().format('dddd, MMMM Do') }</span>
+          <span class="hours-date"> { moment().format('ddd, MMM Do') }</span>
+          <span class="sr-hidden">: </span>
           <span class="hours-time">{ this.hours || 'loading...' }</span>
         </a>
       </div>
