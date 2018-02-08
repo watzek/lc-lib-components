@@ -1,6 +1,6 @@
 {
   "name": "lc-lib-components",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "lewis & clark college library web components",
   "files": [
     "dist/"
